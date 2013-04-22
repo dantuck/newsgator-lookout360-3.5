@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Lookout360 external sample | NewsGator</title>
+
+  <!-- Included CSS Files -->
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+
+  <script src="javascripts/ngRibbonAutoLoader.min.js"></script>
+</head>
+<body>
+  <script type="text/javascript">
+    var registerNgRibbon = {
+      cacheKey: "634934240492550038"
+      , ribbonOptions: { fixedPosition: true
+        , backgroundColor: '#8bbc1d'
+        , lookoutUrl: 'https://engage.newsgator.com/my/site/Lookout.aspx'
+        , contextUrl: "https://engage.newsgator.com"
+        , enablePost: true
+        , additionalLinks: {
+          "Engage": {
+            "target": "_blank",
+            "url": "https://engage.newsgator.com/my/site/Lookout.aspx"
+          },
+          "NewsGator": {
+            "target": "_blank",
+            "url": "http://www.newsgator.com"
+          }
+        }
+        , additionalLinksPosition: 3
+        , tileRefreshInterval: 120000
+        , tileContainerWidth: '400px'
+        , revealIframeWidthClass: 'w750'
+        , isExternal: true
+        , localOverrides: { "fr-fr": { title:"Recherche360", titleTooltip:"{0} Ouvert", postTooltip:"Publier sur Recherche" } }
+        , enablePlaceHolderOnBody: true
+        , defaultLocalization: { 
+          "en-us": { "loading":"Loading", "ribbonPromptAuth":"Authenticate with SocialSites", "ribbonPreventLoading":"Hide on this page" } 
+        }
+      }
+      , target: 'body'
+    };
+    ngRibbonAutoLoader.init(registerNgRibbon.cacheKey, registerNgRibbon.ribbonOptions, registerNgRibbon.target);
+  </script>
+  <!-- Header and Nav -->
+
+  <div class="row">
+    <div class="three columns">
+      <h1><img src="http://placehold.it/400x100&text=Logo" /></h1>
+    </div>
+    <div class="nine columns">
+      <ul class="nav-bar right">
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- End Header and Nav -->
+
+
+  <!-- First Band (Slider) -->
+  <!-- The Orbit slider is initialized at the bottom of the page by calling .orbit() on #slider -->
+
+  <div class="row">
+    <div class="twelve columns">
+      <div id="slider">
+        <img src="http://placehold.it/1000x400&text=[img 1]" />
+        <img src="http://placehold.it/1000x400&text=[img 2]" />
+        <img src="http://placehold.it/1000x400&text=[img 3]" />
+        <img src="http://placehold.it/1000x400&text=[img 4]" />
+      </div>
+
+      <hr />
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+
+  <footer class="row">
+    <div class="twelve columns">
+      <hr />
+      <div class="row">
+        <div class="six columns">
+          <p>&copy; Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="six columns">
+          <ul class="inline-list right">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Included JS Files -->
+  <script src="javascripts/foundation.min.js"></script>
+  
+
+  <script type="text/javascript">
+     (function($, window, undefined) {
+        $(window).load(function() {
+          $('#slider').orbit();
+        });
+      })(jQuery, window);
+  </script>
+
+
+  
+  
+</body>
+</html>
