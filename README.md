@@ -3,8 +3,6 @@ newsgator-lookout360-3.5
 
 NewsGator Social Sites Lookout360 implementation for 3.5
 
-Layers is a plugin for [jQuery](http://jquery.com) that gives you the ability to apply layers of functionality to a given element. Right now the functionality is limited to events but later may expand.
-
 ## Features
 
 ## Usage
